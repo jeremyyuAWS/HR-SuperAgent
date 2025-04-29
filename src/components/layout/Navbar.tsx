@@ -13,7 +13,7 @@ const Navbar: React.FC = () => {
             <div className="flex items-center justify-center w-9 h-9 rounded bg-black text-white mr-3">
               <BrainCircuit className="h-5 w-5" />
             </div>
-            <span className="text-lg font-medium text-gray-900 dark:text-white">AI HR SuperAgents</span>
+            <span className="text-lg font-medium text-gray-900 dark:text-white">Meesho HR Agents</span>
           </div>
           
           <div className="flex items-center">

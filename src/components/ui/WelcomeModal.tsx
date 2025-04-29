@@ -18,7 +18,7 @@ const WelcomeModal: React.FC<WelcomeModalProps> = ({ isOpen, onClose }) => {
             <div className="w-10 h-10 rounded-lg bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center mr-3">
               <BrainCircuit className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
             </div>
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Welcome to AI HR SuperAgents</h2>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">Welcome to Meesho HR Agents</h2>
           </div>
           <button 
             onClick={onClose}
@@ -30,7 +30,7 @@ const WelcomeModal: React.FC<WelcomeModalProps> = ({ isOpen, onClose }) => {
         
         <div className="px-6 py-5 overflow-y-auto max-h-[calc(90vh-120px)]">
           <p className="text-gray-600 dark:text-gray-300 mb-6">
-            Welcome to the AI HR SuperAgents Platform! This powerful platform is designed to revolutionize how your organization manages HR operations through AI-powered agents and centralized intelligence.
+            Welcome to the Meesho HR Agents Platform! This powerful platform is designed to revolutionize how your organization manages HR operations through AI-powered agents and centralized intelligence.
           </p>
           
           <div className="space-y-6">
