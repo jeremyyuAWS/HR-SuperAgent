@@ -9,6 +9,28 @@ export type AgentType = {
   status?: 'online' | 'offline' | 'maintenance';
 };
 
+export type ChatMessage = {
+  id: string;
+  sender: 'user' | 'agent';
+  text: string;
+  timestamp: Date;
+  attachments?: ChatAttachment[];
+};
+
+export type ChatAttachment = {
+  type: 'chart' | 'document' | 'metric';
+  data: {
+    type?: string;
+    labels?: string[];
+    values?: number[];
+    title?: string;
+    content?: string;
+    value?: number;
+    trend?: 'up' | 'down' | 'stable';
+    change?: number;
+  };
+};
+
 export type OGINode = {
   id: string;
   label: string;
@@ -29,15 +51,4 @@ export type MetricData = {
   trend: 'up' | 'down' | 'stable';
   change: number;
   unit?: string;
-};
-
-export type ChatMessage = {
-  id: string;
-  sender: 'user' | 'assistant';
-  text: string;
-  timestamp: Date;
-  attachments?: {
-    type: 'chart' | 'table' | 'document';
-    data: any;
-  }[];
 };
